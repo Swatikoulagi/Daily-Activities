@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <body>
+        
+        <h2>HTML Table with Colspan</h2>
+    </body>
+    <style>
+         body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    table {
+      border: 1px solid #ffffff;
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      background-color: #ffffff;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .green-highlight {
+      background-color: #ffffff; /* Green background color */
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #0c0c0c;
+    }
+     tr:nth-child(odd){
+        background-color: ;
+    }
+    
+     
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                
+            </tr>
+            <tr>
+              
+            </tr>
+            <td>1</td>
+         <td colspan="4">Merged Row: Full Details Unavailable</td>
+            <tr>
+            <td>2</td>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>New York</td>
+         </tr>
+
+         <tr>
+
+            <td>3</td>
+            <td colspan="2">Jane Smith</td>
+            <td colspan="2">Los Angeles</td>
+         </tr>
+
+         <tr>
+            <td>4</td>
+            <td>Sam Wilson</td>
+            <td>30</td>
+            <td>Chicago</td>
+         </tr>
+
+         <tr>
+            <td>5</td>
+            <td colspan="2">Chris Johnson </td>
+            <td colspan="2"> Details Pending</td>
+            
+         </tr>
+         <tr>
+         <td>6</td>
+         <td colspan="4">Row with All Data Merged</td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>Emily Davis</td>
+            <td>22</td>
+            <td>San Francisco</td>
+            
+         </tr>
+
+         <tr>
+            <td>8</td>
+            <td>Alex Brown</td>
+            <td>28</td>
+            <td>Boston</td>
+         </tr>
+
+         <tr>
+            <td>9</td>
+            <td colspan="4">Summary Row: Additional Details</td>
+         </tr>
+        
+        </thread>
+    </table>
+    
+    </td>
+</body>
+</html>
