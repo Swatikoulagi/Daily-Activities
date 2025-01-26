@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.box{
+    width:80%;
+    height:80%;
+    margin:0 10px;
+    border: 1px solid rgb(201, 55, 196);
+    object-fit:contain;
+}
+.cont 
+{
+    display:flex;
+    margin-top:20px;
+    padding-top:5px;
+    gap:10px;
+    width:50%;
+    padding-top:10px;
+    padding-bottom:10px;
+    height:50%;
+    background-color:grey;
+    font-size:25px;
+    margin-left:10px;
+    align-items:center;
+    justify-content:center;
+}
+
+.cont1 
+{
+    display: flex;
+    gap:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:25px;
+    width:100%;
+    height:100%;
+    margin:20px auto;
+    background-color:blueviolet;
+    margin-left:10px;
+    align-items:center;
+    justify-content:center;
+}
+
+.cont3
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    height:60%;
+    color:white;
+    border-radius:20px;
+    margin-left:10px;
+    transition:all ease-in 0.255;
+}
+
+.cont3 .box
+{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:center;
+    width:60%;
+    height:60%;
+    flex-direction:column;
+    gap:10px;
+    padding:9px;
+    transform:rotateX(120dge);
+    transition:all ease-in 0.35;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;  /* This makes space between company name and nav */
+    align-items: center;             /* Vertically align items */
+    padding: 20px;
+    color: white;
+}
+.header .links{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    pag: 30px;
+
+}
+.header .links{
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+    transition: all ease-in 0.3s;
+
+
+}
+.header .links a:hover{
+    color: aquamarine;
+}
+.header .links button{
+    padding: 10px 20px;
+    background-color: lightpink;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+nav {
+    display: flex;  /* Makes the nav items line up horizontally */
+    gap: 15px;      /* Space between each nav item */
+}
+
+   
+.cont3 .box img
+{
+   width:80%;
+   height:30%;
+   object-fit:cover;
+   border-radius:20%;
+ 
+   box-shadow:0px 0px 10px gray;
+    transform:scale(1.03);
+    
+}
+.cont3 .box h2
+{
+font-family:century;
+font-size:20px;
+color:lightcoral;
+font-weight:530px;
+}
+
+.cont3 .box p
+{
+font-family:century;
+font-size:14px;
+text-align:center;
+color:lightskyblue;
+line-height:20px;
+}
+
+.container .box:hover
+{
+    box-shadow:0px 0px 10px gray;
+    transform:scale(1.03);
+}
+.cont3 .box:hover h2{
+transform:rotateX(120dge);
+
+}
