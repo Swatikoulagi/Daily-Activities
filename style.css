@@ -1,0 +1,65 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container for layout */
+  .cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for the text box section */
+  .cont .cont1  {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Styling for each box */
+  .box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  /* Hover effect for each .box */
+  .box:hover {
+    transform: scale(1.1);
+    filter: grayscale(1);
+  }
+  
+  /* Styling for the image container */
+  .cont2 {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Styling for images inside boxes */
+  .cont2 .box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid orchid;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .cont2 .box img:hover {
+    transform: scale(1.1);
+    filter: grayscale(1);
+  }
+  
