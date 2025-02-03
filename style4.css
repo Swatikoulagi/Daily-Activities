@@ -1,0 +1,99 @@
+.container
+{
+    width:100%;
+    height:100%;
+    gap: 20px;
+   
+}
+
+.container .title
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container .title h2
+{
+    font-size:90px;
+    display:flex;
+    color:white;
+    padding-top:10px;
+    justify-content:center;
+    text-transform:capitalize;
+}
+.container .title h2:nth-child(1)
+{
+    font-size:36px;
+}
+.container .title h2::first-letter
+{
+    font-size:36px;
+}
+    
+ .flex-container .box
+{
+width:30%;
+height:300px;
+gap:40px 20px;
+padding-left:20px;
+border:2px solid blanchedalmond;
+border-radius:5px;
+box-shadow:10px 5px 5px gray;
+cursor:pointer;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+display: inline-block;
+padding: 20px 20px;
+transform: none;
+justify-content: space-between;
+
+}
+  .flex-container .box i
+ { 
+    
+    font-size:40px;
+    display:flex;
+    color:purple;
+    padding-top:10px;
+    justify-content:center;
+    
+ }
+ .flex-container .box :hover i
+ {
+    color:white;
+ }
+  .flex-container .box p
+ {  
+    text-align:center;
+    line-height: 25px;
+    overflow:visible;
+    color:black;
+    font-size:15px;
+ }
+ .flex-container .box h2
+ {  
+    text-align:center;
+    line-height:15px;
+    background-color:;
+    border-radius:7px;
+    color:chocolate;
+    font-size:25px;
+ }
+ body{
+    background-color:
+ }
+ 
+ 
+ span{
+    color:black;
+    font-size:50px;
+ }
+ .flex-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
