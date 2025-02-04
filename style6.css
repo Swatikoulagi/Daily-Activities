@@ -1,0 +1,285 @@
+.container
+{
+    width:100%;
+    height:50%;
+    scroll-behavior:smooth;
+    margin-bottom:10px;
+    gap:20px;
+}
+
+.container .flex-container
+{
+ position:absolute;
+ left:20;
+ right:8;
+ height:0;
+ margin-bottom:10px;
+ background-color:aquamarine;;
+ height:80%;
+ bottom:0;
+ margin-bottom:10px;
+ background-color:blueviolet;
+ transition: all ease-in 0.27;
+}
+.container .flex-container  .box:hover
+{
+
+ height:40%;
+ opacity:0.5;
+ margin-bottom:10px;
+ background-color:lightseagreen;
+}
+.container .flex-container .element:hover i
+{
+   display:block;
+   margin-bottom:10px;
+}
+.container .flex-container .box:hover p
+{
+display:none;
+color:salmon;
+font-size:15px;
+margin-bottom:10px;
+}
+.links
+{
+   gap:30px;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    float:right;
+    margin-bottom:10px;
+    justify-content:right;
+    color:red;
+}
+.head 
+{
+   font-size:24px;
+   padding:10px;
+   width:100%;
+   float:right;
+   position:fixed;
+   margin-bottom:40px;
+   background-color:paleturquoise;
+   color:palevioletred;
+   gap:20px;
+}
+.head h2
+{
+ opacity:0.5;
+ margin-bottom:10px;
+}
+.head h2:hover
+{
+   opacity:1.0;
+ background-color:goldenrod;
+}
+.head .links
+{
+    gap:15px;
+    font-size:28px;
+    display:flex;
+    margin-bottom:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items:center;
+    float:right;
+    justify-content:right;
+    color:lightpink;
+}
+.container .links .box{
+   width:80%;
+   height:80%;
+   margin-bottom:10px;
+   margin:0 10px;
+   border: 1px solid rgb(201, 55, 196);
+   object-fit:contain;
+}
+.container .flex-container .links .box:hover p
+{
+display:none;
+}
+
+
+.head .links a{
+   position:relative;   
+ }
+.head .links a::after
+{ 
+   content:'';
+   width:0;
+   position:absolute;
+  height:4px;
+  color:orangered;
+  left:0;
+  margin-bottom:10px;
+  bottom:8px;
+  border-radius:2px solid blue;
+}
+.head .links a:hover::after{
+   width:100;
+}
+.container .title
+{
+    width:100%;
+    height:100%;
+    margin-bottom:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container .title h2
+{
+    font-size:90px;
+    display:flex;
+    color:white;
+    padding-top:10px;
+    margin-bottom:10px;
+    justify-content:center;
+    text-transform:capitalize;
+}
+
+.container .title h2::first-letter
+{
+    font-size:36px;
+}
+
+    
+ .container .flex-container .box
+{
+width:22%;
+height:200px;
+gap:50px;
+padding-left:30px;
+border:2px solid blue;
+border-radius:5px;
+cursor:pointer;
+display:flex;
+position:relative;
+margin-bottom:10px;
+display: inline-block;
+padding: 20px 40px;
+
+}
+  .flex-container .box i
+ { 
+    
+    font-size:40px;
+    display:none;
+    color:blue;
+    padding-top:10px;
+    margin-bottom:10px;
+    justify-content:center;
+    
+ }
+ .container .flex-container .box .element i{
+   display:none;
+   margin-bottom:10px;
+   font-size:15px;
+ }
+
+
+  .container .flex-container .box .element p,
+  .container .flex-container .box .element i
+  {
+   display:block;
+
+  }
+  .head .links a
+  {
+  position:relative;
+  margin-bottom:10px;
+  }
+  .head .links .a
+{
+    text-decoration:none;
+    color:red;
+    display:flex;
+    justify-content:end;
+    margin-bottom:10px;
+    font-size:20px;
+    transition: all ease-in;
+}
+  
+ /*.flex-container .box h2
+ {  
+    text-align:center;
+    line-height:18px;
+    background-color:white;
+    border-radius:5px;
+    color:crimson;
+    font-size:20px;
+ }*/
+ 
+ .head .links a{
+   position:relative;   
+   margin-bottom:10px;
+ }
+.home
+{
+   width:75%;
+   height:60%;;
+   margin:20px 0;
+   margin-bottom:10px;
+   background-color:white;
+}
+.contact{
+   height:100%;
+   width:100%;
+   margin-bottom:10px;
+   color:purple;
+   font-size:20px;
+   background-color:white;
+}
+.contact form{
+   width:40%;
+   height:220px;
+   margin-bottom:10px;
+   padding-top: 10px;
+   text-align:center;
+   margin-left:70px;
+   border:2px solid lightgreen;
+   float:right;
+}
+.image
+{   
+    
+    width:30%;
+    height:40vh;
+     background-image:url('file:///E:/xampp/htdocs/practise/images%20(3).jpg');
+    background-repeat:no-repeat;
+      background-position:center;
+    background-size:cover;
+    object-fit:cover;
+    display: flex;
+    padding-top:0px;
+    float:right;
+    border-radius: 5% 3%;
+   box-shadow:0px 0px 0px blue;
+   margin-bottom:20px;
+}
+my{
+   height:200%;
+   width:200%;
+   font-size:20px;
+   display:flex;
+   margin-bottom:10px;
+   margin:20px 0;
+    align-items:center;
+    justify-content:center;
+   background-color:white;
+   margin-bottom:20px;
+}
+.footer
+{
+   flex:1;
+   margin:1px;
+   background-color: black;
+   color:white;
+   font-size:20px;
+   margin-bottom:10px;
+   margin:20px 0;
+   padding:20px 2;
+   margin-top:14px;
+
+
+}
