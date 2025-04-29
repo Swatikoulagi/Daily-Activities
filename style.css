@@ -4,75 +4,120 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    width: 100%;
-    background: url('bkgd.png') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(135deg, #a1c4fd, lightpink);
+
+}
+.popup-container {
     display: flex;
+    padding: 90px;
+    background: linear-gradient(135deg, #a1c4fd, lightpink);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
-}
-form{
-    width: 400px;
-    padding: 25px 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 25px purple;
-
-}
-form h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4a148c;
+    margin: 60px auto;
+    height: 60%;
+    width: 50%;
+    z-index: 0;
 }
 
-.input-field{
-    margin-bottom: 15px;
-}
-
-.input-field label{
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.input-field input,
-.input-field select{
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    transition: 0.3s ease-in-out;
-}
-
-.input-field input:focus,
-.input-field select:focus{
-    border-color: #7b1fa2;
-    box-shadow: 0 0 5px rgba(123, 31, 162, 0.3);
-}
-
-form p#error{
-    display: none;
-    color: crimson;
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-button{
-    width: 100%;
-    padding: 12px;
-    background-color: #7b1fa2;
+.popup-container button {
+    width: 150px;
     color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 60px;
     border: none;
-    border-radius: 6px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all ease-in-out 0.3s;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:hover{
-    background-color: #6a1b9a;
+.popup-container button:hover {
+    background: linear-gradient(60deg, orange);
+    transform: scale(1.05);
+}
+
+.popup-container button:active {
+    transform: scale(0.9);
+}
+
+.pop-hover {
+    width: 80%;
+    animation: anim1 linear 0.4s;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    padding: 20px;
+}
+
+.pop-hover .pop-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-hover .pop-header h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: purple;
+}
+
+.pop-hover .pop-header i {
+    cursor: pointer;
+    color: purple;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.pop-hover .pop-header i:hover {
+    transform: rotate(280deg);
+}
+
+.pop-hover .pop-body {
+    width: 100%;
+    padding: 20px 0;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-hover .pop-body i {
+    font-size: 3rem;
+    color: orange;
+}
+
+.pop-hover .pop-body p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
 }
