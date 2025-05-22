@@ -1,72 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather Forecast App</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Timeline</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="title">
-      <i class="ri-cloud-windy-line"></i>
-      <h2>Weather Forecast Application</h2>
+    <div class="header">
+        <h2>LeadSoft</h2>
+        <div class="links">
+            <a href="#">Home</a>
+             <a href="#">About Us</a>
+              <a href="#">Our Services</a>
+               <a href="#">Careers</a>
+               <a href="#">Contact Us</a>
+        </div>
     </div>
-
-    <div class="input-field">
-      <div class="input-with-icon">
-        <i class="ri-search-line"></i>
-        <input id="cityName" type="text" placeholder="Enter city name" />
-      </div>
-      <button id="btnsearch">Search</button>
+    <div class="homepage">
+        <h2>LeadSoft Placement Academy</h2>
     </div>
-
-    <div class="container1 spaced">
-      <div class="field">
-        <label class="centered-icon">
-          <i class="ri-map-pin-fill"></i>
-          <span>Location</span>
-        </label>
-        <p id="name">--</p>
-      </div>
-      <div class="field">
-        <label class="centered-icon">
-          <i class="ri-temp-hot-line"></i>
-          <span>Temperature</span>
-        </label>
-        <p id="temperature">--</p>
-      </div>
-    </div>
-
-    <div class="container1">
-      <div class="field">
-        <label class="centered-icon">
-          <i class="ri-cloud-line"></i>
-          <span>Weather</span>
-        </label>
-        <p id="weather">--</p>
-      </div>
-      <div class="field">
-        <label class="centered-icon">
-          <i class="ri-eye-line"></i>
-          <span>Visibility</span>
-        </label>
-        <p id="visibility">--</p>
-      </div>
-    </div>
-
-    <div class="container1">
-      <div class="field">
-        <label class="centered-icon">
-          <i class="ri-code-box-line"></i>
-          <span>Response Code</span>
-        </label>
-        <p id="code">--</p>
-      </div>
-    </div>
-  </div>
-  <script src="script1.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>

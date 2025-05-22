@@ -1,35 +1,25 @@
-var inputCity = document.querySelector('#cityName');
-var btnSearch = document.querySelector('#btnsearch');
-var weather = document.querySelector('#weather');
-var temperature = document.querySelector('#temperature');
-var nameEl = document.querySelector('#name');
-var visibility = document.querySelector('#visibility');
-var code = document.querySelector('#code');
+const s1 = gsap.timeline()
 
-btnSearch.addEventListener('click', async function (){
-  var city = inputCity.value
+s1.from('.header',{
+    opacity:0,
+    y:-45,
+    duration:0.2
 
-  if (city === ''){
-    alert('City is required.');
-    return;
-  }
-  try{
-    var apiKey = 'de6747a4331b0ec8cf07739dce4dbefc';
-    var res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
-    var data = await res.json();
+})
+s1.from('.header h2',{
+    opacity:0,
+    x:-400,
+    duration:0.5,
 
-    if (data.cod !== 200){
-      alert(data.message || 'City not found');
-      return;
-    }
-
-    weather.textContent = data.weather[0].description;
-    temperature.textContent = data.main.temp + ' °C';
-    nameEl.textContent = data.name;
-    visibility.textContent = data.visibility + ' m';
-    code.textContent = data.cod;
-  } catch (err){
-    alert('Something went wrong!');
-    console.log(err);
-  }
-});
+})
+s1.from('.header .links a',{
+    opacity:0,
+    y:-43,
+    duration:0.4,
+    stagger:0.2
+})
+s1.from('.homepage h2',{
+    opacity:0,
+    scale:0.5,
+    
+})
